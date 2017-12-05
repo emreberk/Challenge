@@ -1,18 +1,32 @@
 PODS:
-  - Alamofire (4.5.1)
-  - Kingfisher (4.4.0)
+  - Alamofire (4.6.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - Kingfisher (4.5.0)
   - ObjectMapper (3.1.0)
 
 DEPENDENCIES:
   - Alamofire
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Kingfisher
   - ObjectMapper
 
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  Kingfisher: 62a43e03047a1ac5159d0be3ac62673ef4b99cc3
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
 
-PODFILE CHECKSUM: fd5a7e8ccc6af0b46f75004b54c1eeebab34a4bc
+PODFILE CHECKSUM: 07b9dc7bb2dd58bcd5d283e0b1aec36977af5f4b
 
 COCOAPODS: 1.1.1
