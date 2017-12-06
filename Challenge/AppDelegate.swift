@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         
         let appearance = UINavigationBar.appearance()
-        appearance.barTintColor = .flatBlue
+        appearance.barTintColor = .flatBlack
         appearance.tintColor = .white
         appearance.isTranslucent = false
         appearance.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white,

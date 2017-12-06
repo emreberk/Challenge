@@ -21,6 +21,7 @@
 		CFBD2B201FD6F5DF00016812 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD2B1F1FD6F5DF00016812 /* APICall.swift */; };
 		CFBD2B241FD7156500016812 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD2B231FD7156500016812 /* AlbumDetailViewController.swift */; };
 		CFBD2B261FD7173100016812 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD2B251FD7173100016812 /* Photo.swift */; };
+		CFFE1CF01FD7EB8B009AD699 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE1CEF1FD7EB8B009AD699 /* AlbumDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CFBD2B1F1FD6F5DF00016812 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		CFBD2B231FD7156500016812 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		CFBD2B251FD7173100016812 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		CFFE1CEF1FD7EB8B009AD699 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CFBD2B191FD6F0C100016812 /* Cells */,
+				CFFE1CEF1FD7EB8B009AD699 /* AlbumDetailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				CFBD2B1B1FD6F0DF00016812 /* AlbumTableViewCell.swift in Sources */,
 				CFBD2B241FD7156500016812 /* AlbumDetailViewController.swift in Sources */,
 				CFBD2B201FD6F5DF00016812 /* APICall.swift in Sources */,
+				CFFE1CF01FD7EB8B009AD699 /* AlbumDetailView.swift in Sources */,
 				CF24CA5F1FD739C3004A643E /* AlbumPhotoTableViewCell.swift in Sources */,
 				CFBD2B1E1FD6F48E00016812 /* Endpoint.swift in Sources */,
 			);

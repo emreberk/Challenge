@@ -14,7 +14,6 @@ class AlbumListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Albums"
         tableView.tableFooterView = UIView() // removes blank cells
         setRefreshControl()
         getAlbums()
@@ -28,8 +27,8 @@ class AlbumListViewController: UITableViewController {
     
     func getAlbums(){
         refreshControl?.beginRefreshing()
-        APICall(to: .albums).request { (item:Album?, array, error) in
-            if let albums = array{
+        APICall(to: .albums).requestArray { (items:[Album]?, error) in
+            if let albums = items{
                 self.albums = albums
                 self.getPhotos()
             }else if error != nil{
@@ -40,8 +39,8 @@ class AlbumListViewController: UITableViewController {
     }
     
     func getPhotos(){
-        APICall(to: .photos).request { (item:Photo?, array, error) in
-            if let photos = array{
+        APICall(to: .photos).requestArray { (items:[Photo]?, error) in
+            if let photos = items{
                 self.fillAlbums(with: photos)
                 self.tableView.reloadData()
             }else if error != nil{
@@ -93,7 +92,6 @@ class AlbumListViewController: UITableViewController {
 
 // MARK: Table View Data Source
 extension AlbumListViewController{
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albums.count
     }
@@ -104,12 +102,10 @@ extension AlbumListViewController{
         cell.fill(album)
         return cell
     }
-    
 }
 
 // MARK: Table View Delegate
 extension AlbumListViewController{
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
@@ -118,7 +114,6 @@ extension AlbumListViewController{
         let album = albums[indexPath.row]
         showDetail(of: album)
     }
-    
 }
 
 

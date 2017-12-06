@@ -11,11 +11,15 @@ import UIKit
 class AlbumDetailViewController:UIViewController{
     
     @IBOutlet weak var tableView:UITableView!
+    @IBOutlet weak var detailView:AlbumDetailView!
     
     var album:Album!
     
     override func viewDidLoad() {
-        title = album.title
+        detailView.fill(album)
+        tableView.tableFooterView = UIView() // removes blank cells
+        tableView.backgroundColor = .flatBlack // for bounce 
+        navigationController?.hidesNavigationBarHairline = true
     }
     
 }
